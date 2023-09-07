@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIP Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tip__container">
+      <div class="wrapper">
+        <span>Bill</span>
+        <input type="number" class="amount" />
+      </div>
+      <div class="wrapper">
+        <span>Tip</span>
+        <p class="tip">$ 0</p>
+      </div>
+      <div class="wrapper">
+        <span>Total Amount</span>
+        <p class="total__amount">$ 0</p>
+      </div>
+      <div class="tip__box">
+        <div class="wrapper">
+          <span>Tip %</span>
+          <p class="tip__perc">15%</p>
+        </div>
+        <input type="range" id="tip-perc" min="5" max="100" value="5" />
+      </div>
+      <div class="people__box">
+        <div class="wrapper">
+          <span>No of people</span>
+          <p class="people">3</p>
+        </div>
+        <input type="range" id="people-val" min="1" max="50" value="1" />
+      </div>
+      <div class="tip__result">
+        <div class="wrapper">
+          <span>Tip Per person</span>
+          <p class="tip-per-person">$ 00</p>
+        </div>
+        <div class="wrapper">
+          <span>Total Per person</span>
+          <p class="total-per-person">$ 00</p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
