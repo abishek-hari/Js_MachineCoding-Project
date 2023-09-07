@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.temp__conv-container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.temperature {
+  background-color: lightcoral;
+  padding: 1em 0.5em;
+  border-radius: 0.3em;
+}
+.heading {
+  margin-bottom: 1em;
+}
+.temp__container {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  align-items: center;
+}
+.input {
+  width: 100%;
+  padding: 0.5em 0.3em;
+  border: none;
+  outline: none;
+  border-radius: 0.3em;
+  font-size: 0.9rem;
+}
