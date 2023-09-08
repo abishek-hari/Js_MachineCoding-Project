@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="currency__convertor-container">
+      <div class="currency__convertor">
+        <h2 class="heading">Currency Converter</h2>
+        <div class="currency__box">
+          <select id="currency__first">
+            <option value="USD">USD</option>
+            <option value="CAD">CAD</option>
+            <option value="JPY">JPY</option>
+            <option value="GBP">GBP</option>
+          </select>
+          <input type="number" id="first" value="1" min="0" />
+        </div>
+        <div class="currency__box">
+          <select id="currency__second">
+            <option value="INR">INR</option>
+            <option value="NOK">NOK</option>
+            <option value="SEK">SEK</option>
+            <option value="RUB">RUB</option>
+          </select>
+          <input type="number" id="second" value="83" ="0" />
+        </div>
+        <p class="exchange__rate"></p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
