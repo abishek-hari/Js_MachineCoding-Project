@@ -1,4 +1,4 @@
-const day = document.querySelector("#day");
+const days = document.querySelector("#day");
 const hour = document.querySelector("#hour");
 const minute = document.querySelector("#minute");
 const second = document.querySelector("#second");
@@ -10,19 +10,18 @@ function updateCountDown() {
 
   const sec = 1000;
   const min = sec * 60;
-  const hr = min * 60;
-  const days = hr * 24;
+  const hrs = min * 60;
+  const day = hrs * 24;
 
-  const d = Math.floor(gap / days);
-  const h = Math.floor((gap % days) / hr);
-  const m = Math.floor((gap % hr) / min);
+  const d = Math.floor(gap / day);
+  const h = Math.floor((gap % day) / hrs);
+  const m = Math.floor((gap % hrs) / min);
   const s = Math.floor((gap % min) / sec);
 
-  day.textContent = d;
-  hour.textContent = h;
-  minute.textContent = m;
-  second.textContent = s;
-
-  setInterval(updateCountDown, 1000);
+  days.innerText = d;
+  hour.innerText = h;
+  minute.innerText = m;
+  second.innerText = s;
 }
-updateCountDown();
+
+setInterval(updateCountDown, 1000);
